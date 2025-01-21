@@ -8,10 +8,10 @@ This project is a mentor-led session to build a full-fledged e-commerce applicat
 The **MERN stack** is a popular technology stack used for building full-stack web applications. It is favored for its **JavaScript-only approach**, which allows developers to use a single programming language (JavaScript) across the entire application, both on the frontend and backend. This approach simplifies development and is particularly beginner-friendly
 
 The MERN stack includes:
-- **MongoDB**: 
+- **MongoDB** 
 - **Express.js**
-- **React.js**:
-- **Node.js**:
+- **React.js**
+- **Node.js**
 
 A **REST API** (Representational State Transfer) is an architectural style for building web services that enables communication between a client and a server using standard HTTP methods like GET, POST, PUT, and DELETE. 
 
