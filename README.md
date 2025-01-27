@@ -103,3 +103,41 @@ We created a structured hierarchy for organizing backend code effectively:
 #### 4. Basic Error Handling
 - Implemented middleware to handle errors and provide clear error messages for better debugging.
 - Ensured the server does not crash on unexpected errors.
+
+---
+
+
+# Milestone 4: User Model, Controller, and File Uploads
+
+## Overview
+In this milestone, we focused on enhancing the backend by introducing user management capabilities and integrating support for file uploads.
+
+---
+
+## Features Implemented
+
+### 1. **User Model**
+- Designed the User Model with a schema to define user details:
+  - **Name**
+  - **Email**
+  - **Password**
+
+### 2. **User Controller**
+- Developed the User Controller to manage operations related to user data, such as:
+  - Adding a new user.
+  - Fetching user information.
+
+### 3. **File Uploads**
+- Integrated [Multer](https://github.com/expressjs/multer) to enable file uploads.
+- Supported uploading files such as profile pictures.
+- Configured storage to save uploaded files in the backend securely.
+
+---
+
+## Outcome
+- Enhanced the backend with:
+  - Comprehensive user management capabilities.
+  - Robust support for handling file uploads.
+
+---
+
