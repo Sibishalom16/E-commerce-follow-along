@@ -129,3 +129,17 @@ We created a structured hierarchy for organizing backend code effectively:
 - Connected the frontend with the backend API for user registration.
 - Displayed appropriate error and success messages.
 - Styled the page using modern UI components for a seamless user experience.
+
+
+---
+
+## Milestone 6: What Was Achieved
+
+In this milestone, we completed the following:
+
+- Implemented advanced product filtering and search functionality.
+- Optimized backend API endpoints for better performance.
+- Integrated payment processing using Stripe.
+- Enhanced user authentication with JWT expiration handling.
+- Improved UI/UX by refining product pages and checkout flows.
+- Fixed bugs from previous milestones and improved error handling.
