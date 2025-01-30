@@ -52,6 +52,8 @@ Key goals of authentication:
 - Prevent unauthorized access.
 - Enable a personalized user experience.
 
+---
+
 
 
 **Milestone 2: Project Setup and Login Page**
@@ -73,6 +75,8 @@ Added basic styling using CSS (App.css) to ensure a clean and user-friendly desi
 Git Integration:
 Added the new files to version control and committed progress to the GitHub repository.
 This milestone lays the groundwork for creating the front-end interface and interaction logic for the application.
+
+---
 
 ## Milestone 3: Project Setup for Backend
 
@@ -106,38 +110,22 @@ We created a structured hierarchy for organizing backend code effectively:
 
 ---
 
+### Milestone 4: Creating User Model and Controller
 
-# Milestone 4: User Model, Controller, and File Uploads
+- Designed the User model with fields such as name, email, password, and role.
+- Implemented user authentication and authorization mechanisms.
+- Used bcrypt for password hashing and JWT for authentication.
+- Integrated Multer for handling file uploads (e.g., profile images).
+- Updated API routes for user management.
+- Improved error handling and validation for user-related operations.
 
-## Overview
-In this milestone, we focused on enhancing the backend by introducing user management capabilities and integrating support for file uploads.
-
----
-
-## Features Implemented
-
-### 1. **User Model**
-- Designed the User Model with a schema to define user details:
-  - **Name**
-  - **Email**
-  - **Password**
-
-### 2. **User Controller**
-- Developed the User Controller to manage operations related to user data, such as:
-  - Adding a new user.
-  - Fetching user information.
-
-### 3. **File Uploads**
-- Integrated [Multer](https://github.com/expressjs/multer) to enable file uploads.
-- Supported uploading files such as profile pictures.
-- Configured storage to save uploaded files in the backend securely.
 
 ---
 
-## Outcome
-- Enhanced the backend with:
-  - Comprehensive user management capabilities.
-  - Robust support for handling file uploads.
+### Milestone 5: Creating the Signup Page
 
----
-
+- Developed a user-friendly signup page using React.
+- Integrated form validation to ensure valid user input.
+- Connected the frontend with the backend API for user registration.
+- Displayed appropriate error and success messages.
+- Styled the page using modern UI components for a seamless user experience.
