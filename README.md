@@ -52,6 +52,8 @@ Key goals of authentication:
 - Prevent unauthorized access.
 - Enable a personalized user experience.
 
+---
+
 
 
 **Milestone 2: Project Setup and Login Page**
@@ -73,6 +75,8 @@ Added basic styling using CSS (App.css) to ensure a clean and user-friendly desi
 Git Integration:
 Added the new files to version control and committed progress to the GitHub repository.
 This milestone lays the groundwork for creating the front-end interface and interaction logic for the application.
+
+---
 
 ## Milestone 3: Project Setup for Backend
 
@@ -103,3 +107,25 @@ We created a structured hierarchy for organizing backend code effectively:
 #### 4. Basic Error Handling
 - Implemented middleware to handle errors and provide clear error messages for better debugging.
 - Ensured the server does not crash on unexpected errors.
+
+---
+
+### Milestone 4: Creating User Model and Controller
+
+- Designed the User model with fields such as name, email, password, and role.
+- Implemented user authentication and authorization mechanisms.
+- Used bcrypt for password hashing and JWT for authentication.
+- Integrated Multer for handling file uploads (e.g., profile images).
+- Updated API routes for user management.
+- Improved error handling and validation for user-related operations.
+
+
+---
+
+### Milestone 5: Creating the Signup Page
+
+- Developed a user-friendly signup page using React.
+- Integrated form validation to ensure valid user input.
+- Connected the frontend with the backend API for user registration.
+- Displayed appropriate error and success messages.
+- Styled the page using modern UI components for a seamless user experience.

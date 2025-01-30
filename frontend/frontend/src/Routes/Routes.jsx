@@ -1,7 +1,4 @@
-import React from "react";
-const Login = ()=>{
-return(
-    <div>Login Page</div>
-)
-}
-export default Login;
+import Login from "../pages/Login.jsx";
+import Signup from "../pages/signup.jsx";
+export {Login,}
+export {Signup}
