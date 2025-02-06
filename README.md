@@ -144,5 +144,18 @@ In this milestone, we completed the following:
 - Enhanced user authentication with JWT expiration handling.
 - Improved UI/UX by refining product pages and checkout flows.
 - Fixed bugs from previous milestones and improved error handling.
+milestone7
+
+----
+
+# Milestone 7: User Login
+
+This milestone focused on implementing a secure user login endpoint. Key achievements include:
+
+* **Secure Password Handling:** Implemented bcrypt hashing for passwords, ensuring they are never stored in plain text.  This protects user credentials even in the event of a database breach.
+* **Credential Validation:**  Developed a login endpoint that validates user credentials by comparing the bcrypt hash of the entered password with the stored hash.
+* **User Authentication:** Successfully implemented user authentication based on validated credentials.  This allows the system to identify and authorize users.
+* **Improved Security:**  Enhanced overall application security by implementing secure password handling practices.
+=======
 =======
 

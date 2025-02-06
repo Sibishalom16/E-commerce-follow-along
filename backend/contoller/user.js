@@ -6,6 +6,9 @@ const router = express.Router();
 const { upload } = require("../multer");
 const ErrorHandler = require("../utility/ErrorHandler");
 const catchAsyncErrors = require("../middleware/catchAsyncError");
+const jwt = require("jsonwebtoken");
+const sendMail = require("./utils/sendMail");
+const sendToken = require("./utils/jwtToken");
 const bcrypt = require("bcryptjs");
 require("dotenv").config();
 
