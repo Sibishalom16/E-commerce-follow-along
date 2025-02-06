@@ -131,6 +131,7 @@ We created a structured hierarchy for organizing backend code effectively:
 - Styled the page using modern UI components for a seamless user experience.
 
 
+
 ---
 
 ## Milestone 6: What Was Achieved
@@ -143,6 +144,7 @@ In this milestone, we completed the following:
 - Enhanced user authentication with JWT expiration handling.
 - Improved UI/UX by refining product pages and checkout flows.
 - Fixed bugs from previous milestones and improved error handling.
+milestone7
 
 ----
 
@@ -154,4 +156,6 @@ This milestone focused on implementing a secure user login endpoint. Key achieve
 * **Credential Validation:**  Developed a login endpoint that validates user credentials by comparing the bcrypt hash of the entered password with the stored hash.
 * **User Authentication:** Successfully implemented user authentication based on validated credentials.  This allows the system to identify and authorize users.
 * **Improved Security:**  Enhanced overall application security by implementing secure password handling practices.
+=======
+=======
 
