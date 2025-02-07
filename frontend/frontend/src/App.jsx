@@ -1,18 +1,20 @@
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import './App.css'
-import React from 'react'
-import {Login,Signup} from './Routes/Routes';
+/* eslint-disable no-unused-vars */
 
+import './App.css';
+import React from 'react';
+import {Login, Signup, Home} from "./Routes/Routes"
 
-function App(){
-  return(
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+function App() {
+  return (
     <BrowserRouter>
     <Routes>
-    <Route path='/' element={<h1>Hello</h1>}></Route>      
-      <Route path='/login' element={<Login/>}></Route>      
-      <Route path='/signup' element={<Signup/>}></Route>      
+    <Route path='/' element={<Home/>}/>
+    <Route path='/login' element={<Login/>}/>
+    <Route path='/signup' element={<Signup/>}/>
     </Routes>
     </BrowserRouter>
-  )
+  );
 }
+
 export default App;

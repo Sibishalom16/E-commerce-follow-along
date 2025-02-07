@@ -1,4 +1,4 @@
-import Login from "../pages/Login.jsx";
+import Login from "../pages/login.jsx";
 import Signup from "../pages/signup.jsx";
-export {Login,}
-export {Signup}
+import Home from "../pages/home.jsx"; 
+export { Login,Signup,Home}
