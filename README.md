@@ -159,3 +159,17 @@ This milestone focused on implementing a secure user login endpoint. Key achieve
 =======
 =======
 
+---
+
+# Milestone 8: Product Card Component
+
+## Overview
+
+In this milestone, I have implemented a reusable card component to showcase products dynamically on the homepage. The card component is designed to display product details such as name, image, and price in a structured layout.
+
+## Features
+
+*   **Reusable Card Component:** A dynamic component that accepts product details as props.
+*   **Dynamic Rendering:** Uses array mapping to render multiple product cards.
+*   **Responsive Layout:** Designed using Flexbox/Grid for a clean and structured display.
+*   **Improved User Experience:** Ensures a consistent and visually appealing product showcase.
