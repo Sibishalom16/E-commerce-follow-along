@@ -155,3 +155,17 @@ This milestone focused on implementing a secure user login endpoint. Key achieve
 * **User Authentication:** Successfully implemented user authentication based on validated credentials.  This allows the system to identify and authorize users.
 * **Improved Security:**  Enhanced overall application security by implementing secure password handling practices.
 
+---
+
+# Milestone 8: Product Card Component
+
+## Overview
+
+In this milestone, I have implemented a reusable card component to showcase products dynamically on the homepage. The card component is designed to display product details such as name, image, and price in a structured layout.
+
+## Features
+
+*   **Reusable Card Component:** A dynamic component that accepts product details as props.
+*   **Dynamic Rendering:** Uses array mapping to render multiple product cards.
+*   **Responsive Layout:** Designed using Flexbox/Grid for a clean and structured display.
+*   **Improved User Experience:** Ensures a consistent and visually appealing product showcase.
