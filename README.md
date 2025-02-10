@@ -169,3 +169,12 @@ In this milestone, I have implemented a reusable card component to showcase prod
 *   **Dynamic Rendering:** Uses array mapping to render multiple product cards.
 *   **Responsive Layout:** Designed using Flexbox/Grid for a clean and structured display.
 *   **Improved User Experience:** Ensures a consistent and visually appealing product showcase.
+
+---
+
+# Milestone 9: Creating the Product Form
+In this milestone, we focused on building a form that allows users to add products, including support for multiple product images. Key achievements include:
+
+* Product Form Implementation: Designed and developed a form to capture essential product details, such as: Product Name Description Price Category Multiple Product Images (file upload support)
+* Image Upload Handling: Implemented functionality to allow multiple product images to be uploaded. Ensured proper validation for image formats and file sizes.
+* Data Management: Configured state management to handle form inputs efficiently. Validated user inputs before submission to ensure accurate product data.
