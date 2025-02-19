@@ -219,3 +219,35 @@ This milestone focuses on creating the "My Products" page, which displays all th
 *   Write an endpoint that filters data in MongoDB based on a user's email and sends the results to the frontend.
 *   Receive data on the frontend.
 *   Dynamically display the received data using the product card component.
+
+
+---
+
+# Milestone 13: Product Editing Functionality
+
+
+## Overview
+
+This project is a step-by-step implementation of an e-commerce platform.  Each milestone focuses on adding specific features and building upon the previous ones.  The current focus is on managing product data, including adding, displaying, and editing products.  The project utilizes a MongoDB database to store product information and a frontend interface to interact with the data through API endpoints.
+
+*   Implemented the ability to edit existing product data.
+*   Added an "Edit" button to product cards on the frontend.
+*   Developed a backend endpoint to handle updating product details in the MongoDB database.
+*   Implemented form auto-filling with existing product data for editing.
+*   Users can now modify product information and save the changes.  This involved:
+    *   Creating an API endpoint to receive updated product data.
+    *   Implementing the update operation in MongoDB.
+    *   Adding an edit button to the product card.
+    *   Populating the edit form with existing product data.
+    *   Enabling users to edit and save the updated data.
+
+
+
+ # Milestone 14: Deleting Product Data from MongoDB
+In this milestone, we focused on implementing delete functionality for product data, allowing users to remove existing product records from the database. Key achievements include:
+
+Backend: Creating a Delete Endpoint Developed a DELETE endpoint to remove product data from MongoDB using the product ID. Used Mongoose to find and delete the product by its ID. Implemented error handling to manage scenarios where the product ID does not exist.
+
+Frontend: Delete Button and Request Handling Added a Delete button to each product card. Clicking the Delete button sends a request to the delete endpoint with the product ID. Implemented a confirmation dialog to ensure users intend to delete the product. Updated the product list dynamically to remove the deleted product without refreshing the page.
+
+UI and UX Enhancements Provided feedback on successful or failed delete operations. Enhanced the user experience with a clean and responsive UI for managing product deletions.
