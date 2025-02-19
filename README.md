@@ -265,7 +265,7 @@ UI and UX Enhancements Provided feedback on successful or failed delete operatio
 
 ---
 
-## Milestone 15 - Navbar Component
+# Milestone 15 - Navbar Component
 
 ### Learning Goals 🎯
 By completing this milestone, we have:
