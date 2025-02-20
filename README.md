@@ -131,6 +131,7 @@ We created a structured hierarchy for organizing backend code effectively:
 - Styled the page using modern UI components for a seamless user experience.
 
 
+
 ---
 
 ## Milestone 6: What Was Achieved
@@ -143,6 +144,7 @@ In this milestone, we completed the following:
 - Enhanced user authentication with JWT expiration handling.
 - Improved UI/UX by refining product pages and checkout flows.
 - Fixed bugs from previous milestones and improved error handling.
+milestone7
 
 ----
 
@@ -154,6 +156,8 @@ This milestone focused on implementing a secure user login endpoint. Key achieve
 * **Credential Validation:**  Developed a login endpoint that validates user credentials by comparing the bcrypt hash of the entered password with the stored hash.
 * **User Authentication:** Successfully implemented user authentication based on validated credentials.  This allows the system to identify and authorize users.
 * **Improved Security:**  Enhanced overall application security by implementing secure password handling practices.
+=======
+=======
 
 ---
 
@@ -170,7 +174,7 @@ In this milestone, I have implemented a reusable card component to showcase prod
 *   **Responsive Layout:** Designed using Flexbox/Grid for a clean and structured display.
 *   **Improved User Experience:** Ensures a consistent and visually appealing product showcase.
 
----
+
 
 # Milestone 9: Creating the Product Form
 In this milestone, we focused on building a form that allows users to add products, including support for multiple product images. Key achievements include:
@@ -178,6 +182,7 @@ In this milestone, we focused on building a form that allows users to add produc
 * Product Form Implementation: Designed and developed a form to capture essential product details, such as: Product Name Description Price Category Multiple Product Images (file upload support)
 * Image Upload Handling: Implemented functionality to allow multiple product images to be uploaded. Ensured proper validation for image formats and file sizes.
 * Data Management: Configured state management to handle form inputs efficiently. Validated user inputs before submission to ensure accurate product data.
+
 
 ---
 
@@ -191,6 +196,7 @@ This milestone focuses on creating a Mongoose schema for products and building a
 *   **Product Schema:** The `product.js` file (or similar) defines the structure of product data (name, description, price, image URL, etc.) using Mongoose, with appropriate validation rules.
 *   **Endpoint:** A POST endpoint (`/products` or similar) handles incoming product data, validates it, and saves it to the MongoDB database.
 
+ mile11
 ---
 
 # Milestone 11: Dynamic Product Display on Home Page
@@ -204,6 +210,7 @@ This milestone focuses on making the home page display products dynamically by f
 *   The backend endpoint should use the appropriate MongoDB driver methods to retrieve all product documents.
 *   The frontend `fetchProducts` function should use `fetch` or a similar library to make the API call.
 *   The product card component should be designed to receive product data as props and display it accordingly.
+
 
 
 ----
@@ -221,7 +228,8 @@ This milestone focuses on creating the "My Products" page, which displays all th
 *   Dynamically display the received data using the product card component.
 
 
----
+
+
 
 # Milestone 13: Product Editing Functionality
 
@@ -254,9 +262,10 @@ Frontend: Delete Button and Request Handling Added a Delete button to each produ
 
 UI and UX Enhancements Provided feedback on successful or failed delete operations. Enhanced the user experience with a clean and responsive UI for managing product deletions.
 
+
 ---
 
-## Milestone 15 - Navbar Component
+# Milestone 15 - Navbar Component
 
 ### Learning Goals 🎯
 By completing this milestone, we have:
@@ -264,6 +273,7 @@ By completing this milestone, we have:
 - Integrated the Navbar into all pages of the application.
 - Ensured smooth navigation between pages.
 - Made the Navbar responsive for all screen sizes.
+
 
 ---
 
@@ -277,3 +287,7 @@ By completing this milestone, I have learned:
 - How to create a new page to display product details.
 - How to add a quantity selection feature.
 - How to implement an "Add to Cart" button.
+
+
+
+
