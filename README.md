@@ -275,4 +275,19 @@ By completing this milestone, we have:
 - Made the Navbar responsive for all screen sizes.
 
 
+---
+
+# Milestone 16 - Product Info Page
+
+## Project Overview 🚀
+This milestone focuses on creating a product info page that displays all product details, allows users to select a quantity, and includes an "Add to Cart" button.
+
+## Learning Goals 🎯
+By completing this milestone, I have learned:
+- How to create a new page to display product details.
+- How to add a quantity selection feature.
+- How to implement an "Add to Cart" button.
+
+
+
 
