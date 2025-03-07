@@ -1,7 +1,8 @@
 /* eslint-disable no-unused-vars */
 import { React, useState } from "react";
 import { AiOutlineEye, AiOutlineEyeInvisible } from "react-icons/ai";
-import styles from "../styles/styles";
+import styles from "../styles/style";
+
 
 import axios from "axios";
 
