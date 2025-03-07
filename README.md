@@ -326,3 +326,16 @@ This milestone focuses on developing the backend functionality required for the 
     * Basic error handling was implemented to manage scenarios where the user's cart is empty or the user does not exist.
 
 ---
+
+#  Milestone 19: Designing a Component for Your Entity
+
+##  Project Overview
+This milestone focuses on building a **cart page UI** and implementing functionality to **increase and decrease product quantity** using backend endpoints.
+
+## 🎯 Learning Goals
+By the end of this milestone, I have:
+- Created a **cart frontend page** that displays products inside the cart.
+- Added **+ and - buttons** to update product quantity.
+- Built **backend endpoints** to increase and decrease product quantity.
+
+---
