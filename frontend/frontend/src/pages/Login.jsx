@@ -1,10 +1,9 @@
 /* eslint-disable no-unused-vars */
 import { React, useState } from "react";
 import { AiOutlineEye, AiOutlineEyeInvisible } from "react-icons/ai";
-import styles from "../styles/style";
+import styles from "../styles/styles";
 
 import axios from "axios";
-
 
 const Login = () => {
 
@@ -29,7 +28,7 @@ const Login = () => {
       </div>
       <div className="mt-8 sm:mx-auto sm:w-full sm:max-w-md">
         <div className="bg-white py-8 px-4 shadow sm:rounded-lg sm:px-10">
-          <form className="space-y-6" >
+          <form className="space-y-6" onSubmit={handleSubmit}>
             <div>
               <label
                 htmlFor="email"
@@ -48,7 +47,6 @@ const Login = () => {
                 />
               </div>
             </div>
-
 
             <div>
               <label
@@ -121,9 +119,7 @@ const Login = () => {
       </div>
     </div>
 
-
   )
 }
-
 
 export default Login

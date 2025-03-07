@@ -1,18 +1,14 @@
-components/nav.jsx
 /* eslint-disable no-unused-vars */
 // src/components/NavBar.jsx
 import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 
-
 const NavBar = () => {
     const [isOpen, setIsOpen] = useState(false);
-
 
     const toggleMenu = () => {
         setIsOpen(!isOpen);
     };
-
 
     return (
         <nav className="bg-blue-600">
@@ -62,7 +58,6 @@ const NavBar = () => {
                             )}
                         </button>
                     </div>
-
 
                     <div className="hidden md:flex md:items-center md:justify-center w-full">
                         <ul className="flex space-x-6">
@@ -119,7 +114,6 @@ const NavBar = () => {
                     </div>
                 </div>
             </div>
-
 
             {/* Mobile Menu */}
             {isOpen && (
@@ -185,6 +179,4 @@ const NavBar = () => {
     );
 };
 
-
 export default NavBar;
-
