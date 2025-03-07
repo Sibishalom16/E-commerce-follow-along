@@ -1,21 +1,17 @@
+require("dotenv").config(); // Ensure environment variables are loaded
 const mongoose = require("mongoose");
 
-const connectDatabase = () => {
-  mongoose
-    .connect(process.env.DB_URL, {
-      useNewUrlParser: true,
-      useUnifiedTopology: true,
-    }) // No need for useNewUrlParser or useUnifiedTopology
-    .then((data) => {
-      console.log(`MongoDB connected with server: ${data.connection.host}`);
-      console.log("mongodb Data",data.Collection)
-      // console.log(data.Collection.find)
-      // console.log(mongoose.connection.collections);
-    })
-    .catch((err) => {
-      console.error(`Database connection failed: ${err.message}`);
-      process.exit(1); // Exit process to avoid running with an invalid DB connection
-    });
+const connectDatabase = async () => {
+  try {
+    const connection = await mongoose.connect(process.env.DB_URL);
+    console.log(`✅ MongoDB connected: ${connection.connection.host}`);
+
+    // List all collections in the connected database
+    console.log("📂 Collections:", Object.keys(mongoose.connection.collections));
+  } catch (error) {
+    console.error(`❌ Database connection failed: ${error.message}`);
+    process.exit(1); // Stop the app if DB connection fails
+  }
 };
 
 module.exports = connectDatabase;
