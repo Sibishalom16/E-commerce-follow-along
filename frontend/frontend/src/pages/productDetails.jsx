@@ -1,3 +1,4 @@
+
 /* eslint-disable no-unused-vars */
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
@@ -12,7 +13,7 @@ export default function ProductDetails() {
 	const [loading, setLoading] = useState(true);
 	const [error, setError] = useState(null);
 	const [quantity, setQuantity] = useState(0); // 1. Initialize quantity state
-	const email = "shalomsibi16@gmail.com";  
+	const email = "shalomsibi16@gmail.com";   
 
 	useEffect(() => {
 		const fetchProduct = async () => {

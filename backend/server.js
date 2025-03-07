@@ -1,5 +1,5 @@
 const app = require("./app");
-const connectDatabase = require("./db/Database");
+const connectDatabase = require("./db/database");
 // const cors = require('cors');
 // app.use(cors({ origin: 'http://localhost:5173' }));
 

@@ -1,3 +1,5 @@
+/* eslint-disable no-unused-vars */
+
 import './App.css';
 import React from 'react';
 import {Login,Signup,Home, CreateProduct, MyProducts, Cart, ProductDetails} from "./Routes/Routes"

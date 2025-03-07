@@ -1,4 +1,3 @@
-
 /* eslint-disable react/prop-types */
 /* eslint-disable no-unused-vars */
 import React, { useState, useEffect } from "react";
@@ -36,7 +35,7 @@ export default function CartProduct({ _id, name, images, quantity, price }) {
                 'Content-Type': 'application/json',
             },
             body: JSON.stringify({
-                email: 'akshara@gmail.com',
+                email: 'dhaya@gmail.com',
                 productId: _id,
                 quantity,
             }),
