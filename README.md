@@ -250,6 +250,7 @@ In this milestone, we implemented the cart functionality by creating a schema to
 
 ## Achievements
 
+
 * **Created Cart Schema:**
     * Designed a Mongoose schema to store cart items.
     * Included product details like name, price, quantity, and user reference.
@@ -320,3 +321,16 @@ By completing this milestone, we:
 - Displayed a "No address found" message when no addresses are available.
 
 ---
+
+# Milestone 21: Address Input Form
+
+## 🌟 Introduction
+Welcome to Milestone 21! In this milestone, we are focusing on creating a frontend form for address input. You will learn how to build a form that captures user information such as country, city, address1, address2, zip code, and address type.
+
+## 🎯 Learning Goals
+By the end of this milestone, you will be able to:
+
+- Create a frontend form that takes address input from users.
+- Capture and store input values such as country, city, address1, address2, zip code, and address type.
+- Implement state management to store and manage address input values.
+- Implement navigation so that when a user clicks "Add Address" on their profile, they are taken to this address input form.
