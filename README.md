@@ -337,3 +337,17 @@ By the end of this milestone, you will be able to:
 
 ---
 
+# Milestone 22: Backend Endpoint for Storing Address
+
+## Overview
+
+This milestone focuses on creating a backend endpoint that will receive an address from the frontend, then store it inside the user profile in the database. The backend will handle the request and add the address to the user's address array in the user collection.
+
+## Learning Goals 🎯
+
+- Understand how to create an endpoint to receive data from the frontend.
+- Learn how to store received data inside a database.
+- Add the address to the user's address array in the database.
+
+
+
