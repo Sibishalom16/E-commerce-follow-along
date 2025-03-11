@@ -334,3 +334,6 @@ By the end of this milestone, you will be able to:
 - Capture and store input values such as country, city, address1, address2, zip code, and address type.
 - Implement state management to store and manage address input values.
 - Implement navigation so that when a user clicks "Add Address" on their profile, they are taken to this address input form.
+
+---
+
