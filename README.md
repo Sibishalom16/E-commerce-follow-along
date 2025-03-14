@@ -350,6 +350,7 @@ This milestone focuses on creating a backend endpoint that will receive an addre
 - Add the address to the user's address array in the database.
 
 
+
 ---
 
 # Milestone 23: Implementing Order Placement Functionality
@@ -364,4 +365,5 @@ This milestone focuses on enhancing our e-commerce application by implementing t
 -   Create a "Select Address" page to display and select delivery addresses.
 -   Develop a backend endpoint to retrieve user addresses.
 -   Define a Mongoose schema for storing order details.
+
 
