@@ -349,3 +349,19 @@ This milestone focuses on creating a backend endpoint that will receive an addre
 - Learn how to store received data inside a database.
 - Add the address to the user's address array in the database.
 
+
+---
+
+# Milestone 23: Implementing Order Placement Functionality
+
+## Overview
+
+This milestone focuses on enhancing our e-commerce application by implementing the order placement functionality. We've added a "Place Order" button to the cart, created a select address page, and defined the product schema for orders in the backend.
+
+## Learning Goals
+
+-   Add a "Place Order" button to the cart page.
+-   Create a "Select Address" page to display and select delivery addresses.
+-   Develop a backend endpoint to retrieve user addresses.
+-   Define a Mongoose schema for storing order details.
+
