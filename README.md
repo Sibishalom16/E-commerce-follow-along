@@ -350,6 +350,7 @@ This milestone focuses on creating a backend endpoint that will receive an addre
 - Add the address to the user's address array in the database.
 
 
+
 ---
 
 # Milestone 23: Implementing Order Placement Functionality
@@ -381,3 +382,4 @@ This milestone focuses on implementing the order confirmation page in our React 
 -   Implement a "Place Order" button.
 
 ---
+
