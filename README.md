@@ -350,6 +350,7 @@ This milestone focuses on creating a backend endpoint that will receive an addre
 - Add the address to the user's address array in the database.
 
 
+
 ---
 
 # Milestone 23: Implementing Order Placement Functionality
@@ -395,3 +396,4 @@ In this milestone, we focused on creating a backend endpoint that allows users t
 -   Store order details in a MongoDB collection using a defined schema.
 
 ---
+
