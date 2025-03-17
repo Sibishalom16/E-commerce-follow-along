@@ -395,3 +395,17 @@ In this milestone, we focused on creating a backend endpoint that allows users t
 -   Store order details in a MongoDB collection using a defined schema.
 
 ---
+
+
+
+## Milestone 26: Implementing 'update' and 'delete' an entity in React app (v3) - Backend Endpoint for User Orders
+
+**Objective:** To create a backend endpoint that retrieves all orders for a specific user based on their email.
+
+**Learning Goals:**
+
+* Understand how to create a backend endpoint that filters data based on user email.
+* Learn how to retrieve user ID from their email.
+* Implement logic to fetch and return all orders associated with a user's ID.
+
+---
