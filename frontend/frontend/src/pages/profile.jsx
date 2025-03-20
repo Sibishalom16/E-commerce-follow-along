@@ -1,7 +1,7 @@
 /* eslint-disable no-constant-binary-expression */
 /* eslint-disable no-unused-vars */
 import React, { useEffect, useState } from "react";
-import AddressCard from "../components/AddressCard";
+import AddressCard from "../components/AdressCard";
 import Nav from "../components/nav";
 
 export default function Profile() {
