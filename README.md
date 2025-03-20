@@ -412,3 +412,18 @@ In this milestone, we focused on creating a backend endpoint that allows users t
 
 ---
 
+# Milestone 27: My Orders Page
+
+## Overview
+
+This milestone focuses on creating a frontend page to display a user's order history. We will fetch order data from the backend endpoint created in the previous milestone and present it in a user-friendly format.
+
+## Learning Goals
+
+-   Create a frontend page for displaying user orders.
+-   Send a GET request to the `/my-orders` endpoint with the user's email.
+-   Display the fetched order data.
+-   Add a navigation link to the "My Orders" page in the navbar.
+
+
+
