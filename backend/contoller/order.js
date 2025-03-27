@@ -48,8 +48,6 @@ router.post('/place-order', async (req, res) => {
 });
 
 
-
-
 router.get('/my- orders', async (req, res) => {
     try {
         const { email } = req.query;
