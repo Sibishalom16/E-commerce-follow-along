@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const Order = require('../model/order'); // Adjust path as needed
+const Order = require("../model/Order")
 const User = require('../model/user');   // Adjust path as needed
 
 router.post('/place-order', async (req, res) => {
@@ -48,7 +48,9 @@ router.post('/place-order', async (req, res) => {
 });
 
 
-router.get('/my- orders', async (req, res) => {
+
+
+router.get('/my-orders', async (req, res) => {
     try {
         const { email } = req.query;
 
