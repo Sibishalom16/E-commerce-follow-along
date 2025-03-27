@@ -438,3 +438,37 @@ By the end of this milestone, users will be able to cancel their placed orders t
 
 This milestone focuses on adding the functionality to cancel existing orders.
 
+
+---
+# Follow-along Project: Online Bookstore - Milestone 29: Integrating PayPal Payment Gateway
+
+## Learning Goals 🎯
+
+By the end of this milestone, we will have laid the groundwork for integrating online payments into our application using the PayPal API. We will learn how to set up a PayPal developer account and obtain the necessary credentials.
+
+## Implementation Details 📝
+
+This milestone focuses on the initial steps required to integrate the PayPal payment gateway. The following actions were taken:
+
+1.  **PayPal Developer Account Setup:**
+    * A PayPal developer account has been created (or accessed if already existing) through the [PayPal developer dashboard](https://developer.paypal.com/).
+
+2.  **Sandbox Account Creation:**
+    * Within the PayPal developer dashboard, a sandbox account has been created. Sandbox accounts are essential for testing payment integrations without using real money.
+
+3.  **Sandbox User ID Retrieval:**
+    * The User ID of the created sandbox account has been copied and saved securely. This ID might be needed for certain API interactions.
+
+4.  **Client ID Retrieval:**
+    * The Client ID associated with the application within the sandbox environment has been copied and saved securely. This Client ID will be used to identify our application when interacting with the PayPal API.
+
+5.  **Order Confirmation Page Update:**
+    * The order confirmation page has been modified to include two payment options for the user:
+        * **Cash on Delivery (COD)**
+        * **Online Payment**
+    * Radio buttons have been implemented to allow the user to select their preferred payment method.
+
+6.  **Conditional PayPal Button Display:**
+    * Logic has been added to the order confirmation page such that when the "Online Payment" radio button is selected, the PayPal payment buttons will be displayed. The actual implementation and functionality of these buttons will be addressed in the next milestone.
+----
+
