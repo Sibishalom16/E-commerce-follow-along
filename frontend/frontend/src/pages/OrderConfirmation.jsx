@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import  { useState, useEffect } from 'react';
 import axios from 'axios';
 import Nav from '../components/nav';
 import { useLocation, useNavigate } from 'react-router-dom';
@@ -6,7 +6,11 @@ import { useLocation, useNavigate } from 'react-router-dom';
 
 const OrderConfirmation = () => {
     const location = useLocation();
-    const [navigate = useNavigate] = useState(null);
+    const navigate = useNavigate();
+    const { addressId, email } = location.state || {};
+
+
+    const [selectedAddress, setSelectedAddress] = useState(null);
     const [cartItems, setCartItems] = useState([]);
     const [totalPrice, setTotalPrice] = useState(0);
     const [loading, setLoading] = useState(true);
@@ -42,7 +46,7 @@ const OrderConfirmation = () => {
 
 
                 // Fetch cart products from /cartproducts endpoint
-                const cartResponse = await axios.get('http://localhost:8000/api/v2/product/cartproducts', {
+                const cartResponse = await axios.get('http://localhost:5000/api/v2/product/cartproducts', {
                     params: { email: email },
                 });
 

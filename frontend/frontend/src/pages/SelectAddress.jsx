@@ -7,7 +7,7 @@ const SelectAddress = () => {
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(null);
     const navigate = useNavigate();
-    const userEmail = 'shalomsibi16@gmail.com'; // Replace with dynamic email in production
+    const userEmail = 'guruprasadhraghavan@gmail.com'; // Replace with dynamic email in production
 
     useEffect(() => {
         const fetchAddresses = async () => {

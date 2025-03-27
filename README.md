@@ -423,3 +423,14 @@ This milestone focuses on creating a frontend page to display a user's order his
 -   Display the fetched order data.
 -   Add a navigation link to the "My Orders" page in the navbar.
 
+---
+
+# Follow-along Project: Online Bookstore - Milestone 28: Adding Order Cancellation
+
+## Learning Goals 🎯
+
+By the end of this milestone, users will be able to cancel their placed orders through the "My Orders" page.
+
+## Implementation Details 📝
+
+This milestone focuses on adding the functionality to cancel existing orders.
