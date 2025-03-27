@@ -350,6 +350,7 @@ This milestone focuses on creating a backend endpoint that will receive an addre
 - Add the address to the user's address array in the database.
 
 
+
 ---
 
 # Milestone 23: Implementing Order Placement Functionality
@@ -398,6 +399,7 @@ In this milestone, we focused on creating a backend endpoint that allows users t
 
 
 
+
 ## Milestone 26: Implementing 'update' and 'delete' an entity in React app (v3) - Backend Endpoint for User Orders
 
 **Objective:** To create a backend endpoint that retrieves all orders for a specific user based on their email.
@@ -423,6 +425,7 @@ This milestone focuses on creating a frontend page to display a user's order his
 -   Display the fetched order data.
 -   Add a navigation link to the "My Orders" page in the navbar.
 
+
 ---
 
 # Follow-along Project: Online Bookstore - Milestone 28: Adding Order Cancellation
@@ -434,6 +437,7 @@ By the end of this milestone, users will be able to cancel their placed orders t
 ## Implementation Details 📝
 
 This milestone focuses on adding the functionality to cancel existing orders.
+
 
 ---
 # Follow-along Project: Online Bookstore - Milestone 29: Integrating PayPal Payment Gateway
@@ -467,3 +471,4 @@ This milestone focuses on the initial steps required to integrate the PayPal pay
 6.  **Conditional PayPal Button Display:**
     * Logic has been added to the order confirmation page such that when the "Online Payment" radio button is selected, the PayPal payment buttons will be displayed. The actual implementation and functionality of these buttons will be addressed in the next milestone.
 ----
+
