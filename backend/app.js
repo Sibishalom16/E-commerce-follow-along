@@ -6,7 +6,7 @@ const bodyParser = require("body-parser");
 const ErrorHandler = require("./middleware/error");
 // const userRoutess = require("./controller/user");
 // const productRoutes = require('./controller/product');
- const orders = require('./controller/Order');
+ const orders = require('../controller/Order');
 
 const app = express();
 

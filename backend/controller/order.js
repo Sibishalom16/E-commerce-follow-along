@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const order = require("../model/Order")
+const Order = require("../model/Order")
 const User = require('../model/user');   // Adjust path as needed
 
 router.post('/place-order', async (req, res) => {
