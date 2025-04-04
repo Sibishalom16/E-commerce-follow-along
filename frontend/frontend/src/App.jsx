@@ -4,7 +4,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './App.css'
 import React from 'react'
 import {Login,Signup,Home, MyProducts,Cart, CreateAddress, Myorders, Profile} from "./Routes/Routes"
-import CreateProduct from '../pages/CreateProduct';
+import CreateProduct from './pages/createProduct';
 import ProductDetails from './pages/productDetails';
 import SelectAddress from './pages/SelectAddress';
 import OrderConfirmation from './pages/OrderConfirmation';

@@ -23,11 +23,11 @@ const userReducer = (state = initialUserState, action) => {
 
 
 // 3. Create and export the store using Redux Toolkit
-const store = configureStore({
+export const store = configureStore({
     reducer: {
         user: userReducer,
     },
 });
 
 
-export default store;
+// export default store;
