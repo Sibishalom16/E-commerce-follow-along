@@ -1,10 +1,10 @@
 
 import React, { useState } from "react";
 import { AiOutlineEye, AiOutlineEyeInvisible } from "react-icons/ai";
-import styles from "../../styles/styles";
+// import styles from "../../styles/styles";
 import axios from "axios";
 import { useDispatch } from "react-redux";
-import { setemail } from "../../store/userActions";
+import { setemail } from "../store/userActions";
 import { useNavigate } from "react-router-dom"; // Import useNavigate
 
 

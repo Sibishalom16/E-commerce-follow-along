@@ -3,7 +3,7 @@
 
 
 import React, { useEffect, useState } from "react";
-import Product from "./components/Product";
+import Product from "../components/product";
 import Nav from "../components/nav";
 
 export default function Home() {

@@ -515,3 +515,11 @@ In this milestone, we focused on implementing global state management for user e
 -   Utilize Redux useSelector to retrieve data from the global state in different components.
 
 ---
+
+## Milestone 33: JWT Token & Cookie Storage  
+
+## ✅ Tasks Completed  
+Installed jsonwebtoken package using NPM.  
+Used sign() method to generate a JWT token with email and user ID.  
+Set maxAge to define token expiration time.  
+Stored the JWT token inside a cookie in the response.

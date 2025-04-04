@@ -1,7 +1,4 @@
-frontend/src/pages/OrderConfirmation 
 
- /* eslint-disable no-unused-vars */
-// OrderConfirmation.jsx
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import Nav from '../components/nav';
