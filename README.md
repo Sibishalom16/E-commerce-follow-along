@@ -499,3 +499,19 @@ userActions.js: Defined a setEmail action to update the email in the global stat
 Integration with React Application
 
 Wrapped the App component inside the Provider component in index.js, passing the store as a prop to ensure global access to the email state.
+
+---
+
+# Milestone 32: Global State Management with Redux for Mail
+
+## Overview
+
+In this milestone, we focused on implementing global state management for user email addresses using Redux. This allows us to store the email after login and access it across all pages of our application.
+
+## Learning Goals
+
+-   Understand how to use Redux to store and access global state.
+-   Implement Redux dispatch to store data in the global state.
+-   Utilize Redux useSelector to retrieve data from the global state in different components.
+
+---
