@@ -2,10 +2,13 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import Nav from '../components/nav'
+import { useSelector } from 'react-redux'; // Import useSelector
+
 
 const MyOrdersPage = () => {
+    const userEmail = useSelector((state) => state.user.email);
     const [orders, setOrders] = useState([]);
-    const defaultEmail = 'guruprasdhraghavan@gmail.com';
+    const defaultEmail = userEmail;
     const [loading, setLoading] = useState(false);
     const [error, setError] = useState('');
 
