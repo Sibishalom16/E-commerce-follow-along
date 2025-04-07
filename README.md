@@ -523,3 +523,23 @@ Installed jsonwebtoken package using NPM.
 Used sign() method to generate a JWT token with email and user ID.  
 Set maxAge to define token expiration time.  
 Stored the JWT token inside a cookie in the response.
+
+---
+
+### Milestone 34: Validating JWT Token from Cookie
+- Implemented functionality to extract the JWT token from the browser cookie on the client-side.
+- Modified client-side code to send the JWT token to the server for authentication.
+- Developed a middleware function on the backend to validate the received JWT token.
+- Integrated the middleware into relevant routes to ensure user authentication before accessing protected pages.
+- Updated the application to prevent unauthenticated users from accessing specific pages.
+
+---
+
+### Milestone 35: Deploying the Application
+- Deployed the backend application to a chosen deployment service (e.g., Heroku, Netlify Functions, AWS).
+- Obtained the deployed backend URL.
+- Updated the frontend application to replace all instances of `localhost` with the deployed backend URL.
+- Deployed the frontend application to a chosen deployment service (e.g., Netlify, Vercel, GitHub Pages).
+- Verified that both the frontend and backend deployments are working correctly and communicating with each other.
+- Ensured the complete deployed website is functional.
+

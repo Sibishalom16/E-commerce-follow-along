@@ -3,34 +3,41 @@ import Nav from '../components/nav';
 import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useSelector } from 'react-redux'; // Import useSelector
+import axios from '../axios.config';
+
 
 const Cart = () => {
-  const navigate =useNavigate()
+    const navigate = useNavigate()
     const [products, setProducts] = useState([]);
-    const userEmail = useSelector((state) => state.user.email);
-    useEffect(() => {
-        fetch(`http://localhost:8000/api/v2/product/cartproducts?email=${userEmail}`)
-          .then((res) => {
-            if (!res.ok) {
-              throw new Error(`HTTP error! status: ${res.status}`);
-            }
-            return res.json();
-          })
-          .then((data) => {
-            setProducts(data.cart.map(product => ({quantity: product['quantity'], ...product['productId']})));
-            console.log("Products fetched:", data.cart);
-          })
-          .catch((err) => {
-            console.error(" Error fetching products:", err);
-          });
-      }, []);
-    
+     // Retrieve email from Redux state
+     const userEmail = useSelector((state) => state.user.email);
+
+
+     useEffect(() => {  
+      if (!userEmail) return;
+         // Use axios with credentials
+         axios.get(`/api/v2/product/cartproducts?email=${userEmail}`)
+           .then((res) => {
+             setProducts(
+               res.data.cart.map(product => ({
+                 quantity: product.quantity,
+                 ...product.productId,
+               }))
+             );
+           })
+           .catch((err) => {
+             console.error("Error fetching products:", err);
+           });
+       }, [userEmail]);
+   
       console.log("Products:", products);
 
 
       const handlePlaceOrder = () => {
         navigate('/select-address'); // Navigate to the Select Address page
       };
+
+
     return (
         <div className='w-full h-screen'>
             <Nav />
@@ -46,7 +53,6 @@ const Cart = () => {
                             ))
                         }
                     </div>
-
                     <div className='w-full p-4 flex justify-end'>
                       <button
                         onClick={handlePlaceOrder}
@@ -55,7 +61,6 @@ const Cart = () => {
                         Place Order
                       </button>
                     </div>
-                    
                 </div>
             </div>
         </div>
