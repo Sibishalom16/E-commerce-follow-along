@@ -1,22 +1,26 @@
-/* eslint-disable no-unused-vars */
 import React, { useState, useEffect } from 'react';
-import axios from 'axios';
+// import axios from 'axios';
+import axios from "../axios.config";
+
+
 import Nav from '../components/nav'
 import { useSelector } from 'react-redux'; // Import useSelector
 
 
 const MyOrdersPage = () => {
+        // Retrieve email from Redux state
     const userEmail = useSelector((state) => state.user.email);
     const [orders, setOrders] = useState([]);
     const defaultEmail = userEmail;
     const [loading, setLoading] = useState(false);
     const [error, setError] = useState('');
 
+
     const fetchOrders = async () => {
         try {
             setLoading(true);
             setError('');
-            const response = await axios.get('http://localhost:8000/api/v2/orders/myorders', {
+            const response = await axios.get('/api/v2/orders/myorders', {
                 params: { email: defaultEmail },
             });
             setOrders(response.data.orders);
@@ -27,11 +31,12 @@ const MyOrdersPage = () => {
         }
     };
 
+
     // Cancel order handler
     const cancelOrder = async (orderId) => {
         console.log("aa")
         try {
-            const response = await axios.patch(`http://localhost:8000/api/v2/orders/cancel-order/${orderId}`);
+            const response = await axios.patch(`/api/v2/orders/cancel-order/${orderId}`);
             // Update the order in local state: either remove or update its status.
             setOrders((prevOrders) =>
                 prevOrders.map((order) =>
@@ -45,9 +50,11 @@ const MyOrdersPage = () => {
         }
     };
 
+
     useEffect(() => {
         fetchOrders();
     }, []);
+
 
     return (
         <>
@@ -56,12 +63,14 @@ const MyOrdersPage = () => {
                 <div className="max-w-4xl mx-auto px-4">
                     <h1 className="text-4xl font-extrabold text-center mb-10">My Orders</h1>
 
+
                     {loading && (
                         <p className="text-center text-blue-500 text-lg">Loading orders...</p>
                     )}
                     {error && (
                         <p className="text-center text-red-500 text-lg">{error}</p>
                     )}
+
 
                     {orders.length > 0 ? (
                         <div className="grid gap-8">
@@ -78,6 +87,7 @@ const MyOrdersPage = () => {
                                             ${order.totalAmount}
                                         </p>
                                     </div>
+
 
                                     <div className="mb-4">
                                         <h2 className="text-xl font-semibold mb-2">Shipping Address</h2>
@@ -97,6 +107,7 @@ const MyOrdersPage = () => {
                                         </div>
                                     </div>
 
+
                                     <div className="mb-4">
                                         <h2 className="text-xl font-semibold mb-2">Items</h2>
                                         <ul className="list-disc ml-8 space-y-1 text-gray-700">
@@ -107,6 +118,7 @@ const MyOrdersPage = () => {
                                             ))}
                                         </ul>
                                     </div>
+
 
                                     {/* Cancel button (hide if already cancelled) */}
                                     {order.orderStatus !== 'Cancelled' && (
@@ -135,5 +147,6 @@ const MyOrdersPage = () => {
         </>
     );
 };
+
 
 export default MyOrdersPage;

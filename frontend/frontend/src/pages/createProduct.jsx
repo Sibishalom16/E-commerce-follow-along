@@ -1,14 +1,16 @@
-/* eslint-disable no-unused-vars */
 import React, { useState, useEffect } from "react";
 import { AiOutlinePlusCircle } from "react-icons/ai";
-import axios from "axios";
+// import axios from "axios";
+import axios from "../axios.config";
+
+
 import { useParams, useNavigate } from "react-router-dom";
 import Nav from "../components/nav";
-
 const CreateProduct = () => {
     const { id } = useParams();
     const navigate = useNavigate();
     const isEdit = Boolean(id);
+
 
     const [images, setImages] = useState([]);
     const [previewImages, setPreviewImages] = useState([]);
@@ -20,6 +22,7 @@ const CreateProduct = () => {
     const [stock, setStock] = useState("");
     const [email, setEmail] = useState("");
 
+
     const categoriesData = [
         { title: "Electronics" },
         { title: "Fashion" },
@@ -27,10 +30,11 @@ const CreateProduct = () => {
         { title: "Home Appliances" },
     ];
 
+
     useEffect(() => {
         if (isEdit) {
             axios
-                .get(`http://localhost:8000/api/v2/product/${id}`)
+                .get(`/api/v2/product/${id}`)
                 .then((response) => {
                     const p = response.data.product;
                     setName(p.name);
@@ -52,12 +56,14 @@ const CreateProduct = () => {
         }
     }, [id, isEdit]);
 
+
     const handleImagesChange = (e) => {
         const files = Array.from(e.target.files);
         setImages((prevImages) => prevImages.concat(files));
         const imagePreviews = files.map((file) => URL.createObjectURL(file));
         setPreviewImages((prevPreviews) => prevPreviews.concat(imagePreviews));
     };
+
 
     const handleSubmit = async (e) => {
         e.preventDefault();
@@ -70,14 +76,16 @@ const CreateProduct = () => {
         formData.append("stock", stock);
         formData.append("email", email);
 
+
         images.forEach((image) => {
             formData.append("images", image);
         });
 
+
         try {
             if (isEdit) {
                 const response = await axios.put(
-                    `http://localhost:8000/api/v2/product/update-product/${id}`,
+                    `/api/v2/product/update-product/${id}`,
                     formData,
                     {
                         headers: { "Content-Type": "multipart/form-data" },
@@ -89,7 +97,7 @@ const CreateProduct = () => {
                 }
             } else {
                 const response = await axios.post(
-                    "http://localhost:8000/api/v2/product/create-product",
+                    "/api/v2/product/create-product",
                     formData,
                     {
                         headers: { "Content-Type": "multipart/form-data" },
@@ -114,9 +122,10 @@ const CreateProduct = () => {
         }
     };
 
+
     return (
         <>
-        <Nav/>
+      <Nav/>
         <div className="w-[90%] max-w-[500px] bg-white shadow h-auto rounded-[4px] p-4 mx-auto">
             <h5 className="text-[24px] font-semibold text-center">
                 {isEdit ? "Edit Product" : "Create Product"}
@@ -254,4 +263,6 @@ const CreateProduct = () => {
         </>
     );
 };
+
+
 export default CreateProduct;

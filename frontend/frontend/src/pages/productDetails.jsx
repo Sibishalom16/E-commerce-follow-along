@@ -1,16 +1,19 @@
-/* eslint-disable no-unused-vars */
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import axios from "axios";
+// import axios from "axios";
+import axios from "../axios.config";
+
+
 import Nav from "../components/nav";
 import { IoIosAdd } from "react-icons/io";
 import { IoIosRemove } from "react-icons/io";
 import { useSelector } from 'react-redux'; // Import useSelector
 
 
-
 export default function ProductDetails() {
     const userEmail = useSelector((state) => state.user.email);
+
+
     const { id } = useParams();
     const [product, setProduct] = useState(null);
     const [loading, setLoading] = useState(true);
@@ -23,7 +26,7 @@ export default function ProductDetails() {
         const fetchProduct = async () => {
             try {
                 const response = await axios.get(
-                    `http://localhost:8000/api/v2/product/product/${id}`
+                    `/api/v2/product/product/${id}`
                 );
                 console.log("Fetched product:", response.data.product);
                 setProduct(response.data.product); // Ensure correct state setting
@@ -80,21 +83,6 @@ export default function ProductDetails() {
         );
     }
 
-    const addtocart = async () => {
-		try {
-			const response = await axios.post(
-				"http://localhost:8000/api/v2/product/cart",
-				{
-					userId: email,
-					productId: id,
-					quantity: quantity,
-				}
-			);
-			console.log("Added to cart:", response.data);
-		} catch (err) {
-			console.error("Error adding to cart:", err);
-		}
-	};
 
     if (!product) {
         return (
@@ -103,6 +91,24 @@ export default function ProductDetails() {
             </div>
         );
     }
+// add to cart function
+    const addtocart = async () => {
+        try {
+            const response = await axios.post(
+                "/api/v2/product/cart",
+                {
+                    userId: email,
+                    productId: id,
+                    quantity: quantity,
+                }
+            );
+            console.log("Added to cart:", response.data);
+        } catch (err) {
+            console.error("Error adding to cart:", err);
+        }
+    };
+
+
 
 
     return (
@@ -215,9 +221,7 @@ export default function ProductDetails() {
 
 
                             <div className="flex flex-wrap gap-x-5 my-3">
-                                <button className="bg-black text-white px-5 py-2 rounded-full hover:bg-neutral-800 hover:-translate-y-1.5 active:translate-y-0 transition-transform duration-200 ease-in-out active:duration-0 active:ease-linear"
-                                onClick={addtocart} 
-                                >
+                                <button className="bg-black text-white px-5 py-2 rounded-full hover:bg-neutral-800 hover:-translate-y-1.5 active:translate-y-0 transition-transform duration-200 ease-in-out active:duration-0 active:ease-linear" onClick={addtocart}>
                                     Add to Cart
                                 </button>
                             </div>
@@ -230,6 +234,3 @@ export default function ProductDetails() {
         </>
     );
 }
-
-
-

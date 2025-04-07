@@ -1,10 +1,8 @@
-/* eslint-disable no-unused-vars */
-// react-app/src/pages/Home.js
-
-
 import React, { useEffect, useState } from "react";
-import Product from "../components/product";
+import Product from "../components/Product";
 import Nav from "../components/nav";
+import axios from "../axios.config";
+
 
 export default function Home() {
   const [products, setProducts] = useState([]);
@@ -13,7 +11,7 @@ export default function Home() {
 
 
   useEffect(() => {
-    fetch("http://localhost:8000/api/v2/product/get-products")
+    axios.get("/api/v2/product/get-products")
       .then((res) => {
         if (!res.ok) {
           throw new Error(`HTTP error! status: ${res.status}`);
@@ -44,7 +42,7 @@ export default function Home() {
 
   return (
     <>
-    <Nav/>
+     <Nav />
     <div className="w-full min-h-screen bg-neutral-800">
       <h1 className="text-3xl text-center text-white py-6">Product Gallery</h1>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 p-4">
@@ -53,6 +51,6 @@ export default function Home() {
         ))}
       </div>
     </div>
-        </>
+    </>
   );
 }

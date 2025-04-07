@@ -4,7 +4,7 @@ import axios from "axios";
 import { useNavigate } from "react-router-dom";
 import Nav from "../components/nav";
 import { useSelector } from 'react-redux'; // Import useSelector
-
+import axios from '../axios.config'
 
 
 const CreateAddress = () => {
@@ -50,6 +50,22 @@ const CreateAddress = () => {
             alert("Failed to add address. Please check the data and try again.");
         }
     };
+    useEffect(() => {   
+        if (!userEmail) return;
+           // Use axios with credentials
+           axios.get(`/api/v2/product/cartproducts?email=${userEmail}`)
+             .then((res) => {
+               setProducts(
+                 res.data.cart.map(product => ({
+                   quantity: product.quantity,
+                   ...product.productId,
+                 }))
+               );
+             })
+             .catch((err) => {
+               console.error("Error fetching products:", err);
+             });
+         }, [userEmail]);
 
 
     return (
